@@ -12,6 +12,8 @@
 :root {
   --animate-duration: 1000ms;
   --animate-delay: 1s;
+  color: #000;
+  font-family: MenuFontBookAntiqua;
 }
 
 
