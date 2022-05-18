@@ -1,0 +1,614 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading screen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+<?php $i = 1; ?>
+<!--<div id="loader"></div>-->
+<div id="container" class="">
+    <!-- Everything in your body should go under here-->
+    <!--    <div class="row heading-title">-->
+    <!--        <div class="col col-sm-12">-->
+    <!--            <h1 class="heading-title">Menu</h1>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    Zero page-->
+    <table class="table table-responsive animate__animated" id="table-0">
+        <tr>
+            <td colspan="4" class="bigger"></td>
+        </tr>
+        <tr>
+            <td class="bolder-font"></td>
+            <td></td>
+            <td class="bolder-font price-text"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bolder-font"></td>
+            <td class="bolder-font price-text"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bolder-font"></td>
+            <td class="bolder-font price-text"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="bolder-font"></td>
+            <td colspan="2" class="">
+                <img src="assets/img/pngwing.com.png" alt="Kokot logo"
+                     class="kokot-logo">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="bigger"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bolder-font"></td>
+            <td class="bolder-font price-text"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bolder-font"></td>
+            <td class="bolder-font price-text"></td>
+            <td></td>
+        </tr>
+        <tr class="table-row">
+            <td colspan="1" class="one">&nbsp;</td>
+            <td></td>
+            <td colspan="2" class="two">
+                <img src="assets/img/thomas-henry.png" alt="Thomas Henry logo"
+                     class="thomas-henry-logo">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2">
+            </td>
+        </tr>
+    </table>
+
+    <!--    First page - true one-->
+    <table class="table table-responsive animate__animated" id="table-first">
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>Lily 300ml &#160;&#160;<bigger>4.8</bigger>
+                </h4>
+                <strong>
+                    <i class="smaller">
+                        (Džin sa divljom jagodom, limun, limunska <br/>trava, soda voda)
+                    </i>
+                </strong>
+                <br/>
+                <br/>
+                <i class="smaller">
+                    <strong>UKUS</strong>
+                    : osvježavajuć i citrusan, voćkast sa notom <br>slatkoće.
+                </i>
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>Ć, ja sam Jasmini 120ml&#160;&#160;&#160;&#160;&#160;&#160;
+                    <bigger>4.8</bigger>
+                </h4>
+                <strong>
+                    <i class="smaller">
+                        (Vodka, jasmin, Martini Ambrato, Aperol, liči)
+                    </i>
+                </strong>
+                <br/>
+                <br/>
+                <i class="smaller-taste">
+                    <strong>
+                        UKUS
+                    </strong>
+                    : cvjetan ukus sa malom notom gorčine i <br/>citrusa.
+                </i>
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>Daddy's girl 200ml &#160;&#160;&#160;&#160;&#160;&#160;<bigger>5.8</bigger>
+                </h4>
+                <strong>
+                    <i class="smaller">
+                        (Freixenet Ice, menta, zova, Thomas Henry <br/>cherry blossom, sa svježom jagodom <br/>umočenom
+                        u
+                        Callebaut belgijsku čokoladu)
+                    </i>
+                </strong>
+                <br/>
+                <br/>
+                <i class="smaller-taste">
+                    <strong>UKUS</strong>
+                    : osvježavajuć sa voćkastim i biljnim notama.<br>
+                    Najbolji spritz koji ste ikada probali.
+                </i>
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>Mai Taison 250ml &#160;&#160;&#160;&#160;&#160;<bigger>4.8</bigger>
+                </h4>
+                <strong>
+                    <i class="smaller">
+                        (Šamar, tropsko voće, bjelance, sok od jabuke, <br/>parfem od Šamara i tropskog voća)
+                    </i>
+                </strong>
+                <br/>
+                <br/>
+                <i class="smaller-taste">
+                    <strong>UKUS</strong>
+                    : tropski i kremast.
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <h3 class="h3-smaller">PROLJEĆNA KARTA PIĆA</h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+    </table>
+
+    <!--    Second page - true one  -->
+    <table class="table table-responsive animate__animated" id="table-2">
+        <tr>
+            <td colspan="3" class="bigger">
+                SPECIJALITETI KUĆE
+            </td>
+            <td>
+                <img src="assets/img/giffard.png" alt="Giffard logo" class="giffard-logo">
+            </td>
+        </tr>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>Macaca Uakari of the Kanha 200ml &#160;&#160;<bigger>10</bigger>
+                </h4>
+                <strong><i class="smaller">(Diplomatico Planas, Diplomatico Mantuano, banana oleo sachrum, kokosova
+                        voda, pjena)</i></strong><br/><br/>
+                <i class="smaller"><strong>UKUS</strong>: džungla u čaši, Dubok i slojevit, banana <br>začinjena
+                    klinčićima ušuškana u laganu
+                    pjenu.</i>
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>From Dusk Till Dawn 150ml&#160;&#160;&#160;&#160;&#160;&#160;
+                    <bigger>10</bigger>
+                </h4>
+                <strong><i class="smaller">(Woodford Reserve, malina, čokolada, dim od <br>Jack Daniel's
+                        buradi)</i></strong><br/><br/>
+                <i class="smaller-taste"><strong>UKUS</strong>: slatki, voćni, jaki ukus maline i crne <br>čokolade,
+                    ukus oprljen plamenom bijelog javora.</i>
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>ArtiChocker 300ml &#160;&#160;&#160;&#160;&#160;&#160;<bigger>12</bigger>
+                </h4>
+                <strong><i class="smaller">(Heradura Plata, Paragon Rue Berry, <br>Giffard triple sec, Thomas Henry
+                        mango)</i></strong><br/><br/>
+                <i class="smaller-taste"><strong>UKUS</strong>: osvježavajući tropski i biljni ukus sa <br>zemljanim
+                    tonovima.
+                    Postiže balans između <br>modernog i izvornog. Ukus je jednostavan i ujedno <br>jako slojevit.
+                    Za sve naše ljude iz prašume.</i>
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td class="bolder-font" colspan="4">
+                <h4>Suze radosnice 250ml &#160;&#160;&#160;&#160;&#160;<bigger>10</bigger>
+                </h4>
+                <strong><i class="smaller">(Hendrick's, rabarbara, Paragon Timur berry, <br>tropsko voće,
+                        menta)</i></strong><br/><br/>
+                <i class="smaller-taste"><strong>UKUS</strong>: nježan i voćni, na prve note podsjeća na <br>slatkiše iz
+                    djetinjstva dok u
+                    drugom sloju ima <br>intenzivan ukus citrusa i bobičastog voća. Utjeha za <br>naše unutrašnje dijete
+                    i ujedno sjećanje na naše <br>snove.</i>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <h3>KOKTELI</h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <hr class="hr-smaller">
+            </td>
+        </tr>
+    </table>
+
+    <!--    First page-->
+    <table class="table table-responsive animate__animated" id="table-1">
+        <tr>
+            <td colspan="4" class="bigger">RUM 30ml</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Sailor Jerry</td>
+            <td class="bolder-font price-text">2.4</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Diplomatico Planas</td>
+            <td class="bolder-font price-text">3.2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Diplomatico Mantuano</td>
+            <td class="bolder-font price-text">3.2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Diplomatico Reserva Exclusiva</td>
+            <td class="bolder-font price-text">4.2</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="separator">
+                <h4 class="hidden"> &nbsp;</h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="bigger">VODKA 30ml</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Finlandia</td>
+            <td class="bolder-font price-text">2.2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Old Pilots</td>
+            <td class="bolder-font price-text">4.4</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="separator">
+                <h4 class="hidden"> &nbsp;</h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="bigger">LIKERI</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Jagermeister ICE cold shot 20ml</td>
+            <td class="bolder-font price-text">1.8</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Jagermeister 30ml</td>
+            <td class="bolder-font price-text">2.1</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Jagermeister Manifest 30ml</td>
+            <td class="bolder-font price-text">4.2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Gorki list 30ml</td>
+            <td class="bolder-font price-text">2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Malina Šurlan</td>
+            <td class="bolder-font price-text">2.6</td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2">
+                <img src="assets/img/jagermeister.png" alt="Jagermeister logo"
+                     class="jager-logo" id="table1">
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <!--    Vrijedni pomena-->
+    <table class="table table-responsive animate__animated" id="table-4">
+        <tr>
+            <td colspan="4" class="bigger">VRIJEDNI POMENA</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font t4-td">
+                <strong>Raspberry fields forever <span class="lower"> 300ml</span></strong><br/>
+                <i class="lower"> (Vodka, triple sec, malina, limun, šumsko voće, Angostura biteri, Sprite)</i>
+            </td>
+            <td class="bolder-font price-text t4-td">6,4</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font t4-td">
+                <strong>OK, boomer <span class="lower"> 350ml</span></strong>
+                <br/>
+                <i class="lower">(Džin, jagoda, tropsko voće, vanila, limun, Thomas Henry pink grapefruit)</i>
+            </td>
+            <td class="bolder-font price-text t4-td">6.4</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font t4-td">
+                <strong>Lily <span class="lower"> 300ml</span></strong><br/>
+                <i class="lower">(Džin sa divljom jagodom, limun, limunska trava, soda voda)</i>
+            </td>
+            <td class="bolder-font price-text t4-td">4.8</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font smaller t4-td">
+                <strong>Misty mountain Jack <span class="lower"> 200ml</span></strong><br/>
+                <i class="lower">(Jack Daniel's, lješnik, kajsija, čokolada, nadimljeno opiljcima drveta višnje)</i>
+            </td>
+            <td class="bolder-font price-text t4-td">7.8</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font t4-td">
+                <strong>Hawaiian Bloomer <span class="lower"> 350ml</span></strong><br/>
+                <i class="lower">
+                    (Bijeli i tamni rum, Sailor Jerry, ananas, falernum, grenadine, Angostura biteri, sok od pomorandže i ananasa)
+                </i>
+            </td>
+            <td class="bolder-font price-text t4-td">5.9</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font t4-td">
+                <img src="assets/img/giffard.png" alt="Giffard logo" class="giffard-logo-2">
+            </td>
+            <td class="bolder-font price-text t4-td"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="bolder-font t4-td">
+                <h3 class="bigger-2">KOKTELI</h3>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+    </table>
+
+
+    <!--    Third page-->
+    <table class="table table-responsive no-line-spacing animate__animated" id="table-3">
+        <tr class="no-line-spacing">
+            <td colspan="2" class="bigger">TOPLI NAPITCI</td>
+            <td colspan="2">
+                <img src="assets/img/kimbo.png" class="kimbo-logo" alt="Kimbo logo">
+            </td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Espresso</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Espresso doppio</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Cappuccino</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.5</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font smaller">Cappuccino sa biljnim mlijekom</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.5</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Machiato</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.3</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Machiato sa biljnim mlijekom</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.1</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Latte</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Latte sa biljnim mlijekom</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">3.2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Nesscaffe</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Nesscaffe sa biljnim mlijekom</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">3.2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Kuvana kafa</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.2</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bolder-font no-line-spacing">Čaj</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.7</td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr class="no-line-spacing">
+            <td colspan="3" class="bigger-2">BEZALKOHOLNA PIĆA</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font no-line-spacing">Gazirani sokovi</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font no-line-spacing">Limunada</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.9</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">
+                Sezonska voćna soda
+                <br>
+                <i class="smaller extra-small"><strong>(Domaća soda od sezonskog voća.<br>Pitajte osoblje šta je
+                        trenutno u ponudi)</strong></i>
+            </td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.4</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font no-line-spacing">Bezalkoholni kokteli</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.8</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">
+                Piperi Sour<br><strong><i class="smaller extra-small">(sok od šipka)</i></strong>
+            </td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.1</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font no-line-spacing">Cijeđena pomorandža</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">2.6</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font no-line-spacing">Voda flaširana</td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.5</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="bolder-font">Thomas Henry<br>
+                <i class="smaller extra-small"><strong>(Tonic, botanical tonic, bitter lemon, mango,
+                        cherry blossom, ginger beer, pink grapefruit)</strong></i></td>
+            <td class="bolder-font price-text no-line-spacing t3-td">1.9</td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+    </table>
+    <!-- End of body-->
+    <div class="previous" id="prev">
+        <div id="prev"></div>
+    </div>
+
+    <div class="next" id="next">
+        <div></div>
+    </div>
+    <input type="hidden" value="table-1" id="activeDiv">
+
+    <!--    <script>-->
+    <!--        $(function () {-->
+    <!--            $(".previous").click(function () {-->
+    <!--                var activeDivElem = document.getElementById("activeDiv");-->
+    <!--                var activeDiv = activeDivElem.value;-->
+    <!--                if (activeDiv === "table-1") {-->
+    <!--                    var elemPrev = document.getElementById("table-3");-->
+    <!--                    var elem = document.getElementById("table-1");-->
+    <!--                    elem.className = "";-->
+    <!--                    elem.classList.add("table", "table-responsive", "animate__animated", "animate__backOutLeft");-->
+    <!--                    elem.style.display = "none";-->
+    <!--                    elemPrev.style.display = "";-->
+    <!--                    elemPrev.className = "";-->
+    <!--                    elemPrev.classList.add("table", "table-responsive", "no-line-spacing", "animate__animated", "animate__backInRight");-->
+    <!--                    activeDivElem.value = "table-3";-->
+    <!--                }-->
+    <!--                if (activeDiv === "table-2") {-->
+    <!--                    var elem = document.getElementById("table-2");-->
+    <!--                    var elemPrev = document.getElementById("table-1");-->
+    <!--                    elem.className = "";-->
+    <!--                    elem.classList.add("table", "table-responsive", "animate__animated", "animate__backOutLeft");-->
+    <!--                    elem.style.display = "none";-->
+    <!--                    elemPrev.style.display = "";-->
+    <!--                    elemPrev.className = "";-->
+    <!--                    elemPrev.classList.add("table", "table-responsive", "animate__animated", "animate__backInRight");-->
+    <!--                    activeDivElem.value = "table-1";-->
+    <!--                }-->
+    <!--                if (activeDiv === "table-3") {-->
+    <!--                    var elemPrev = document.getElementById("table-2");-->
+    <!--                    var elem = document.getElementById("table-3");-->
+    <!--                    elem.className = "";-->
+    <!--                    elem.classList.add("table", "table-responsive", "no-line-spacing", "animate__animated", "animate__backOutLeft");-->
+    <!--                    elem.style.display = "none";-->
+    <!--                    elemPrev.style.display = "";-->
+    <!--                    elemPrev.className = "";-->
+    <!--                    elemPrev.classList.add("table", "table-responsive", "animate__animated", "animate__backInRight");-->
+    <!--                    activeDivElem.value = "table-2";-->
+    <!--                }-->
+    <!--            });-->
+    <!--        });-->
+    <!--        $(function () {-->
+    <!--            $(".next").click(function () {-->
+    <!--                var activeDivElem = document.getElementById("activeDiv");-->
+    <!--                var activeDiv = activeDivElem.value;-->
+    <!--                if (activeDiv === "table-1") {-->
+    <!--                    var elemNext = document.getElementById("table-2");-->
+    <!--                    var elem = document.getElementById("table-1");-->
+    <!--                    elem.className = "";-->
+    <!--                    elem.classList.add("table", "table-responsive", "animate__animated", "animate__backOutRight");-->
+    <!--                    elem.style.display = "none";-->
+    <!--                    elemNext.style.display = "";-->
+    <!--                    elemNext.className = "";-->
+    <!--                    elemNext.classList.add("table", "table-responsive", "animate__animated", "animate__backInLeft");-->
+    <!--                    activeDivElem.value = "table-2";-->
+    <!--                }-->
+    <!--                if (activeDiv === "table-2") {-->
+    <!--                    var elem = document.getElementById("table-2");-->
+    <!--                    var elemNext = document.getElementById("table-3");-->
+    <!--                    elem.className = "";-->
+    <!--                    elem.classList.add("table", "table-responsive", "animate__animated", "animate__backOutRight");-->
+    <!--                    elem.style.display = "none";-->
+    <!--                    elemNext.style.display = "";-->
+    <!--                    elemNext.className = "";-->
+    <!--                    elemNext.classList.add("table", "table-responsive", "no-line-spacing", "animate__animated", "animate__backInLeft");-->
+    <!--                    activeDivElem.value = "table-3";-->
+    <!--                }-->
+    <!--                if (activeDiv === "table-3") {-->
+    <!--                    var elem = document.getElementById("table-3");-->
+    <!--                    var elemNext = document.getElementById("table-1");-->
+    <!--                    elem.className = "";-->
+    <!--                    elem.classList.add("table", "table-responsive", "no-line-spacing", "animate__animated", "animate__backOutRight");-->
+    <!--                    elem.style.display = "none";-->
+    <!--                    elemNext.style.display = "";-->
+    <!--                    elemNext.className = "";-->
+    <!--                    elemNext.classList.add("table", "table-responsive", "animate__animated", "animate__backInLeft");-->
+    <!--                    activeDivElem.value = "table-1";-->
+    <!--                }-->
+    <!--            });-->
+    <!--        });-->
+    <!--    </script>-->
+    <!--    <script>-->
+    <!--        $("#prev").hover(function () {-->
+    <!--            $("#container").addClass("rotate-neg");-->
+    <!--        }, function () {-->
+    <!--            $("#container").removeClass("rotate-neg");-->
+    <!--        });-->
+    <!--        $("#next").hover(function () {-->
+    <!--            $("#container").addClass("rotate-pos");-->
+    <!--        }, function () {-->
+    <!--            $("#container").removeClass("rotate-pos");-->
+    <!--        });-->
+    <!--    </script>-->
+
+</body>
+</html>
