@@ -1,320 +1,146 @@
-/*#loader {*/
-/*  position: fixed;*/
-/*  width: 100vw;*/
-/*  height: 100vh;*/
-/*  background: #ffffff url("/kokot.gif") no-repeat center;*/
-/*  z-index: 999;*/
-/*  color: #d0d0d0;*/
-/*}*/
-@font-face { font-family: MenuFontBookAntiqua; src: url('../fonts/Book Antiqua Font.ttf'); }
-@font-face { font-family: MenuFontBookAntiqua; font-weight: bold; src: url('../fonts/ANTQUAB.TTF');}
-
-:root {
-  --animate-duration: 1000ms;
-  --animate-delay: 1s;
-  color: #000;
-  font-family: MenuFontBookAntiqua;
+.container {
+    width: 100vw;
+    height: 700vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+.page-1 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.page-2 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.page-3 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-0.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 
-.heading-title {
-  text-align: center;
-  background: transparent;
-  font-family: "Book Antiqua";
-  width: 99vw;
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
 }
-
-.category {
-  background: transparent;
-  margin: 0 auto;
-  height: fit-content;
-  font-family: "Book Antiqua";
-  font-size: 130%;
-  font-weight: bolder;
+.page-4 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: mediumseagreen;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
-
-.menu-item-card {
-  border: 2px solid #dddddd;
-  border-radius: 5px;
-  margin: 3px auto;
-  height: 120px;
+.page-5 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: pixelated;
 }
-
-.menu-image {
-  width: 90%;
-  height: 90%;
-  border: 2px solid white;
-  border-radius: 5px;
+.page-6 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
-
-.menu-description {
-  float: right;
+.page-7 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
-
-h4 {
-  font-size: 110%;
-  font-weight: bolder;
+.page-8 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
-
-i {
-  font-size: 90%;
+.page-9 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-7.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
-
-.price {
-  height: inherit;
-  text-align: right;
-  vertical-align: middle !important;
-  float: right;
-  font-family: "Book Antiqua";
-  font-size: 120%;
-  font-weight: bolder;
+.page-10 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
-
-.price-text {
-  font-family: "Book Antiqua";
-  vertical-align: middle !important;
-  font-weight: bolder;
-  margin-left: -5rem !important;
-}
-
-.col-sm-9 {
-  width: 60% !important;
-  margin: 0 1px;
-}
-
-.col-sm-2 {
-  width: 15% !important;
-  margin: 0 1px;
-}
-
-.col-sm-1 {
-  width: fit-content;
-  margin: 0 1px;
-}
-
-body {
-  background-image: url('../img/background.jpg');
-  background-repeat: repeat-y;
-  background-size: 100vw 100vh;
-}
-
-table {
-  padding-top: 10%;
-  font-family: "Book Antiqua";
-  font-weight: normal;
-}
-
-table, tr, td {
-  border: none !important;
-  line-height: 100%;
-}
-
-td {
-  word-wrap: break-word;
-  letter-spacing: normal;
-  line-height: 90%;
-  width: 20%;
-}
-
-.jager-logo {
-  height: 4em;
-}
-.giffard-logo {
-  margin-left: -60%;
-  margin-top: -15%;
-  height: 1.3em;
-  vertical-align: top;
-  padding-top: 0;
-}
-.giffard-logo-2 {
-  height: 1.5em;
-  vertical-align: top;
-  padding-top: 0;
-}
-.kimbo-logo {
-  margin-left: 0%;
-  height: 1.5em;
-  vertical-align: top;
-  padding-top: 0;
-}
-
-.bigger {
-  font-size: 120%;
-  font-weight: bolder;
-  display: inline;
-}
-
-.smaller {
-  font-size: 80%;
-}
-.smaller-taste {
-  font-family: "Times New Roman";
-  font-size: 80%;
-}
-
-.bolder-font {
-  font-size: 115%;
-}
-
-h4 {
-  font-size: 93%;
-  margin-bottom: -1%;
-}
-
-bigger {
-  font-size: 130%;
-}
-
-table {
-  padding-top: 0;
-}
-
-.no-line-spacing {
-  line-height: 1% !important;
-}
-
-.extra-small {
-  font-size: 70%;
-}
-
-.previous, #previous {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 120%;
-  width: 10vw;
-  background-color: transparent;
-  opacity: 0.2;
-}
-
-.next, #next {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 110% !important;
-  width: 10vw;
-  background-color: transparent;
-  opacity: 0.2;
-}
-
-#prev:hover, #next:hover {
-  background-color: gray;
-  opacity: 0.3;
-}
-
-#table-1 {
-  font-size: 100%;
-  line-height: 100%;
-  margin-top: 10% !important;
-}
-
-#table-1 tr {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin: 0;
-}
-#table-1 td {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin: 0;
-  line-height: 100%;
-  width: 25%;
-}
-
-#table-1 > .bolder-font {
-  font-size: 110%;
-}
-
-#table-2 {
-  margin-top: -5rem !important;
-}
-#table-3 {
-  margin-top: 3rem !important;
-}
-.t3-td {
-  width: 20% !important;
-  margin-left: -5rem !important;
-}
-
-#table-3  td {
-  margin-top: 3rem !important;
-  width: 22.67% !important;
-}
-
-.t3-td {
-  margin-left: -5rem !important;
-}
-.t4-td {
-  width: 75% !important;
-  margin-left: -5rem !important;
-}
-
-table#table-2 > td {
-  width: 100% !important;
-  background-color: #00bfbf;
-}
-
-.rotate-neg {
-  font-size: 80% !important;
-  line-height: 80% !important;
-  -moz-transform: rotate(-0.01turn);
-  -ms-transform: rotate(-0.01turn);
-  -o-transform: rotate(-0.01turn);
-  -webkit-transform: rotate(-0.01turn);
-}
-.rotate-pos {
-  font-size: 80% !important;
-  line-height: 80% !important;
-  -moz-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  -webkit-transform: rotate(2deg);
-}
-
-.thomas-henry-logo {
-  height: 15vh;
-  width: 25vw;
-  float: right;
-}
-
-.table-row {
-  width: 100vw !important;
+.page-11 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../images/page-9.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 .kokot-logo {
-  width: 70vw;
+    margin-top: 30vw;
+    margin-left: 5vh;
+    width: 70vw;
+    padding: auto;
 }
 
-#table-0 {
-  height: 100vh;
-  width: 100vw;
-}
-
-.separator {
-  line-height: 110% !important;
-}
-
-table#table-first {
-  margin-top: -2rem !important;
-  padding-top: 0 !important;
-}
-
-.h3-smaller {
-  padding-top: 5%;
-  font-size: 140%;
-}
-
-.hr-smaller {
-  margin-top: 0rem !important;
-  margin-bottom: 0rem !important;
-  padding: 0rem !important;
-}
-
-.bigger-2 {
-  font-size: 120%;
-  font-weight: bolder;
-}
-
-.lower {
-  font-size: 85% !important;
+.thomas-henry-logo {
+    width: 30vw;
+    margin-top: 30vh;
+    margin-left: 60vw;
 }
