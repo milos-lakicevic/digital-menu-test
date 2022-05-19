@@ -157,6 +157,6 @@
 
 .navbar-brand {
     width: 25% !important;
-    padding-top: 3vh !important;
-    padding-bottom: 3vh !important;
+    margin-top: 3vh !important;
+    margin-bottom: 3vh !important;
 }
