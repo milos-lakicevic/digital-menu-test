@@ -156,9 +156,10 @@
 }
 
 .navbar-brand {
-    width: 30% !important;
+    width: 25% !important;
 }
 
 .navbar-images {
     vertical-align: middle;
+    padding-bottom: 0 !important;
 }
